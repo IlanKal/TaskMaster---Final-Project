@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.Fragments.AddNewTask">
+
+    <!-- Task Description Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Task Description -->
+    <EditText
+        android:id="@+id/taskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write your task here"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:padding="8dp"
+        />
+
+    <!-- Date Picker Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick Date:"
+        android:drawableLeft="@drawable/ic_calendar_black_24dp"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"/>
+
+    <!-- Date Picker -->
+    <Button
+        android:id="@+id/pickDateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cornflower_blue"
+        android:text="Select Date"
+        android:textColor="@color/white"
+        android:padding="8dp" />
+
+    <!-- Category Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category:"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Category Spinner -->
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Type Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type:"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Type Spinner -->
+    <Spinner
+        android:id="@+id/typeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Task"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/cornflower_blue"
+        android:layout_marginTop="16dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
